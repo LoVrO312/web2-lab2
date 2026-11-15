@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
         <h1>Zadatak 1. - SQL umetanje</h1>
         <form method="POST" action="/login">
             <input name="username" placeholder="korisničko ime"><br>
-            <input name="password" placeholder="lozinka"><br>
+            <input type="password" name="password" placeholder="lozinka"><br>
             <label><input type="checkbox" name="safeMode"> Sigurni način</label><br>
             <button>Prijava</button>
         </form>
@@ -78,7 +78,7 @@ app.get('/auth', (req, res) => {
         <h1>Zadatak 2. - Loša autentifikacija</h1>
         <form method="POST" action="/auth/login">
             <input name="username" placeholder="korisničko ime" value="admin"><br>
-            <input name="password" placeholder="lozinka"><br>
+            <input type="password" name="password" placeholder="lozinka"><br>
             <label><input type="checkbox" name="safeMode"> Sigurni način</label><br>
             <button>Prijava</button>
         </form>
